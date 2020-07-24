@@ -1,0 +1,64 @@
+$color1: #0046c3;
+$color2: #ff711f;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+*:focus{
+  outline: none !important;
+}
+
+a {
+  color: white;
+
+  &:hover {
+    color: $color2;
+    text-decoration: none;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  padding: 0;
+
+  @media (min-width: 767px) {
+    max-width: 850px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1275px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 1600px;
+  }
+}
+
+.row {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+.col-md-6,
+.col-md-5,
+.col-md-4,
+.col-md-3,
+.col-md-2,
+.col-md-1 {
+  padding: 0;
+}
+
