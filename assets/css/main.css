@@ -429,6 +429,11 @@ header .header-nav .navbar .navbar-nav .nav-item {
 
 header .header-nav .navbar .navbar-nav a {
   color: white;
+  transition: all 0.5s;
+}
+
+header .header-nav .navbar .navbar-nav a:hover {
+  color: #ff711f;
 }
 
 @media (max-width: 1200px) {

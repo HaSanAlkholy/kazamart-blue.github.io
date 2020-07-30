@@ -324,6 +324,11 @@ header {
         }
         a {
           color: white;
+          transition: all 0.5s;
+
+          &:hover{
+            color:$color2;
+          }
 
           @media (max-width: 1200px) {
             font-size: 0.8rem;
