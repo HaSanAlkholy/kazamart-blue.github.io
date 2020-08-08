@@ -20,10 +20,18 @@
         <div class="header-logo">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 mx-auto logo flex-center">
+                    <div class="col-md-3 col-6 mr-auto logo flex-center">
                         <img src="./assets/img/logo/logo@1X.png" alt="logo">
                     </div>
-                    <div class="col-6 mx-auto search flex-center">
+                    <div class="cart-small col-6 flex-center">
+                        <div class="small-search" onclick="show('#sec-search')">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div id="sec-icon">
+                            <span><i class="fas fa-bars"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-5 mx-auto search flex-center">
                         <form action="#" method="GET" id="search-form">
                             <div class="form-group flex-center">
                                 <select id="category">
@@ -39,18 +47,32 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-5 col-md-3 mx-auto sign flex-center">
+                    <div class="col-5 col-md-4 mx-auto sign flex-center">
                         <div class="prefix">
-                            <form>
-                                <select id="language">
-                                    <option value="en">English</option>
-                                    <option value="ar">Arabic</option>
-                                </select>
-                                <select id="currency">
-                                    <option value="rs">Saudi riyal</option>
-                                    <option value="eg">pound</option>
-                                </select>
-                            </form>
+                            <div class="dropdown ml-auto">
+                                <span> English <i class="fas fa-sort-down"></i> </span>
+                                <div class="dropdown-content">
+                                    <div>
+                                        <a href="#">Englisg</a>
+                                    </div>
+                                    <div>
+                                        <a href="#">Arabic</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown ml-auto">
+                                <span>saudy ryal <i class="fas fa-sort-down"></i> </span>
+                                <div class="dropdown-content">
+                                    <div>
+                                        <a href="#">Saudy ryal</a>
+                                    </div>
+                                    <div>
+                                        <a href="#">Egyptial pound</a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="icons flex-center">
                             <div class="icon"><a href="#"><i class="far fa-user"></i></a></div>
@@ -66,14 +88,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 categories flex-center mx-auto">
-                        <div class="categories-head" onclick="show('dropdown')">
-                            <i class="fas fa-bars"></i> Shop by room
-                        </div>
-                        <div class="categories-body" id="dropdown">
-                            <div> <a href="#"> Room 1 </a></div>
-                            <div> <a href="#"> Room 2 </a></div>
-                            <div> <a href="#"> Room 3 </a></div>
-                            <div> <a href="#"> Room 4 </a></div>
+                        <div class="dropdown">
+                            <span><span><i class="fas fa-bars"></i> shop by room </span>
+                            </span>
+                            <div class="dropdown-content">
+                                <div>
+                                    <a href="#">cat 1</a>
+                                </div>
+                                <div>
+                                    <a href="#">cat 2</a>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-8 navbar">
@@ -411,12 +437,14 @@
         <!-- categories -->
         <section id="categories">
             <div class="container" id="sliders">
-                <div class="categories-head row flex-center" id="sliders-head">
-                    <div data-name="living" class="active">living</div>
-                    <div data-name="dining">dinning</div>
-                    <div data-name="bedroom">bedroom</div>
-                    <div data-name="kids">kids</div>
-                    <div data-name="outdoor">outdoor</div>
+                <div class="categories-head row" id="sliders-head">
+                    <div class="content flex-center">
+                        <div data-name="living" class="active">living</div>
+                        <div data-name="dining">dinning</div>
+                        <div data-name="bedroom">bedroom</div>
+                        <div data-name="kids">kids</div>
+                        <div data-name="outdoor">outdoor</div>
+                    </div>
                 </div>
                 <div class="categories-body row " id="sliders-body">
 
@@ -846,7 +874,7 @@
         <section id="notes">
             <div class="container">
                 <div class="row">
-                    <div class="note mx-auto col-md-3 col-6">
+                    <div class="note mx-auto col-md-3 col-sm-6 ">
                         <div class="note-img"><img src="./assets/img/icons/1.png" alt=".."></div>
                         <div class="note-body">
                             <h3>fast delivery</h3>
@@ -855,7 +883,7 @@
                                 regions</p>
                         </div>
                     </div>
-                    <div class="note mx-auto col-md-3 col-6">
+                    <div class="note mx-auto col-md-3 col-sm-6 ">
                         <div class="note-img"><img src="./assets/img/icons/2.png" alt=".."></div>
                         <div class="note-body">
                             <h3>quality guarantee</h3>
@@ -863,7 +891,7 @@
                                 products</p>
                         </div>
                     </div>
-                    <div class="note mx-auto col-md-3 col-6">
+                    <div class="note mx-auto col-md-3 col-sm-6 ">
                         <div class="note-img"><img src="./assets/img/icons/3.png" alt=".."></div>
                         <div class="note-body">
                             <h3> 14 DAYS RETURN</h3>
@@ -871,10 +899,10 @@
                                 for an exchange</p>
                         </div>
                     </div>
-                    <div class="note mx-auto col-md-3 col-6">
+                    <div class="note mx-auto col-md-3 col-sm-6 ">
                         <div class="note-img"><img src="./assets/img/icons/4.png" alt=".."></div>
                         <div class="note-body">
-                            <h3> %100Secure payment
+                            <h3> %100 Secure payment
                             </h3>
                             <p> We ensure secure payment with trusted
                                 payment gateways</p>
@@ -891,43 +919,43 @@
         <div class="container">
             <div class="row footer-top">
                 <div class="col-md-8 mx-auto flex-center links">
-                    <div class="mr-auto account">
+                    <div class="mr-auto account dropdown2">
                         <div class="head">
-                            <h4>information</h4>
+                            <h4>information <span class="down"><i class="fas fa-sort-down"></i></span> </h4>
                         </div>
-                        <ul>
+                        <ul class="dropdown-content">
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Delivery Information</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
-                    <div class="mr-auto cust">
+                    <div class="mr-auto cust dropdown2">
                         <div class="head">
-                            <h4>customer service</h4>
+                            <h4>customer service <span class="down"><i class="fas fa-sort-down"></i></span> </h4>
                         </div>
-                        <ul>
+                        <ul class="dropdown-content">
                             <li><a href="#">Contact us</a></li>
                             <li><a href="#">Returns</a></li>
                             <li><a href="#">Site Map</a></li>
                         </ul>
                     </div>
-                    <div class="mr-auto adds">
+                    <div class="mr-auto adds dropdown2">
                         <div class="head">
-                            <h4>extras</h4>
+                            <h4>extras <span class="down"><i class="fas fa-sort-down"></i></span> </h4>
                         </div>
-                        <ul>
+                        <ul class="dropdown-content">
                             <li><a href="#">Brands</a></li>
                             <li><a href="#">Gift Certificates</a></li>
                             <li><a href="#">Affiliate</a></li>
                             <li><a href="#">specials</a></li>
                         </ul>
                     </div>
-                    <div class="mr-auto info">
+                    <div class="mr-auto info dropdown2">
                         <div class="head">
-                            <h4>my account</h4>
+                            <h4>my account <span class="down"><i class="fas fa-sort-down"></i></span> </h4>
                         </div>
-                        <ul>
+                        <ul class="dropdown-content">
                             <li><a href="#">My Account</a></li>
                             <li><a href="#">Order History</a></li>
                             <li><a href="#">Wish List</a></li>
@@ -977,6 +1005,94 @@
             </div>
         </div>
     </footer>
+
+    <!-- small-nav -->
+    <section class="sec-nav">
+
+        <div id="sec-items">
+            <div class="sec-head">
+                <div class="dropdown mr-auto">
+                    <span> English <i class="fas fa-sort-down"></i> </span>
+                    <div class="dropdown-content">
+                        <div>
+                            <a href="#">Englisg</a>
+                        </div>
+                        <div>
+                            <a href="#">Arabic</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div onclick="show('#acc')" class="drop"> Account <i class="fas fa-sort-down"></i></div>
+                    <div class="menu" id="acc">
+                        <div><a href="#">sign in</a></div>
+                        <div><a href="#">sign up</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Need help?</a>
+                </li>
+                <li>
+                    <a href="#">Custom made</a>
+                </li>
+                <li>
+                    <a href="#">Turn key project</a>
+                </li>
+                <li>
+                    <a href="#">Decoration</a>
+                </li>
+                <li>
+                    <a href="#">Shop by product</a>
+                </li>
+                <li>
+                    <div onclick="show('#curren')" class="drop"> Saudy ryal <i class="fas fa-sort-down"></i></div>
+                    <div class="menu" id="curren">
+                        <div><a href="#"> saudy ryal</a></div>
+                        <div><a href="#"> egyptian pound</a></div>
+                    </div>
+
+                </li>
+                <li>
+                    <div onclick="show('#ctego')" class="drop">Categories <i class="fas fa-sort-down"></i> </div>
+                    <div class="menu" id="ctego">
+                        <div><a href="#">cat 1</a></div>
+                        <div><a href="#">cat 2</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Main</a>
+                </li>
+            </ul>
+            <p class="text-left pl-3"> HOTLINE <span>92000000</span> </p>
+        </div>
+
+        <div id="sec-search" class="flex-center">
+            <form action="#" method="GET" id="search-form2" class="flex-center">
+                <div class="form-group flex-center">
+                    <input type="text" class="form-control" name="search" placeholder="Search...">
+                    <a type="submit" role="button" onclick="document.getElementById('search-form2').submit();">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="form-group flex-center">
+                    <select id="category">
+                        <option value="all">categories<i class="fas fa-sort-down"></i></option>
+                        <option value="cat1">cat 1</option>
+                        <option value="cat2">cat 2</option>
+                    </select>
+                    <div class="close-search flex-center" onclick="show('#sec-search')">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
 

@@ -5,6 +5,10 @@ var mySwiper = new Swiper('.swiper-container', {
   loop: true,
   updateOnWindowResize: true,
   slidesPerView: 1,
+  autoplay: {
+    delay: 4000,
+  },
+
 
 
   // If we need pagination
@@ -27,6 +31,10 @@ var mySwiper = new Swiper('.categories-container', {
   updateOnWindowResize: true,
   slidesPerView: 8,
   spaceBetween: 10,
+  autoplay: {
+    delay: 4000,
+  },
+
   breakpoints: {
     // when window width is >= 1200px
     1200: {
@@ -74,6 +82,10 @@ var mySwiper = new Swiper('.best-seller-swiper-container', {
   updateOnWindowResize: true,
   slidesPerView: 4,
   spaceBetween: 50,
+  autoplay: {
+    delay: 4000,
+  },
+
   breakpoints: {
     // when window width is >= 480px
     992: {
@@ -112,6 +124,10 @@ var mySwiper = new Swiper('.categories-swiper-container', {
   updateOnWindowResize: true,
   slidesPerView: 4,
   spaceBetween: 50,
+  autoplay: {
+    delay: 4000,
+  },
+
   breakpoints: {
     // when window width is >= 480px
     992: {
@@ -154,7 +170,7 @@ function slidersChange(e) {
   let name = e.target.dataset.name;
   if (name) {
     let sliders = document.getElementById('sliders-body').children;
-    let tags = document.getElementById('sliders-head').children;
+    let tags = document.getElementById('sliders-head').children[0].children;
     removeActiveTag(tags);
     addActiveTag(e.target);
     removeActiveSlider(sliders);
@@ -190,8 +206,18 @@ function addActiveSlider(list, name){
 }
 
 
-// navbar
+// second navbar
+
+$('#sec-icon').click(function (e) { 
+  $('#sec-items').toggleClass('show');
+});
+
+$('#close-btn').click(function (e) { 
+  $('#sec-items').removeClass('show');
+});
+
 
 function show(e){
-  $(`#${e}`).toggleClass('active');
+  $(e).toggleClass('active');
+  console.log('called');
 }
