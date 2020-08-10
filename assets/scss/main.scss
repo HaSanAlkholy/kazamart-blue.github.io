@@ -289,9 +289,11 @@ header {
           }
 
           option {
-            background-color: $color1;
-            border-color: $color1;
-            text-align: right;
+            background-color: rgb(238, 238, 238);
+            color: black;
+            border: none;
+            outline: none;
+            text-transform: none;
           }
         }
       }

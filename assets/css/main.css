@@ -412,9 +412,11 @@ header .header-logo .search form select:focus {
 }
 
 header .header-logo .search form select option {
-  background-color: #0046c3;
-  border-color: #0046c3;
-  text-align: right;
+  background-color: #eeeeee;
+  color: black;
+  border: none;
+  outline: none;
+  text-transform: none;
 }
 
 header .header-logo .cart-small {
