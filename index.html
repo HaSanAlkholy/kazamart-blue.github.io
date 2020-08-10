@@ -24,14 +24,14 @@
                         <img src="./assets/img/logo/logo@1X.png" alt="logo">
                     </div>
                     <div class="cart-small col-6 flex-center">
-                        <div class="small-search" onclick="show('#sec-search')">
+                        <div class="small-search" id="sec-search-icon">
                             <i class="fas fa-search"></i>
                         </div>
                         <div id="sec-icon">
                             <span><i class="fas fa-bars"></i></span>
                         </div>
                     </div>
-                    <div class="col-5 mx-auto search flex-center">
+                    <div class="col-6 mx-auto search flex-center">
                         <form action="#" method="GET" id="search-form">
                             <div class="form-group flex-center">
                                 <select id="category">
@@ -47,7 +47,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-5 col-md-4 mx-auto sign flex-center">
+                    <div class="col-5 col-md-3 mx-auto sign flex-center">
                         <div class="prefix">
                             <div class="dropdown ml-auto">
                                 <span> English <i class="fas fa-sort-down"></i> </span>
@@ -294,19 +294,19 @@
                 <div class="banners">
                     <div class="row first">
                         <div class="banner">
-                            <h3>Modern Bedrooms
+                            <h3>Modern Bedrooms <br>
                                 Loved by Many</h3>
                             <a href="#" class="btn">SHOP NOW</a>
                         </div>
                         <div class="banner">
-                            <h3>your kids room
+                            <h3>your kids room <br>
                                 must be awesome</h3>
                             <a href="#" class="btn">SHOP NOW</a>
                         </div>
                     </div>
                     <div class="row second">
                         <div class="banner">
-                            <h3>Coffe table
+                            <h3>Coffe table <br>
                                 for living room</h3>
                             <a href="#" class="btn">SHOP NOW</a>
                         </div>
@@ -318,7 +318,7 @@
                             </h3>
                         </div>
                         <div class="banner">
-                            <h3>Coffe table
+                            <h3>Coffe table <br>
                                 for living room</h3>
                             <a href="#" class="btn">SHOP NOW</a>
                         </div>
@@ -1007,7 +1007,7 @@
     </footer>
 
     <!-- small-nav -->
-    <section class="sec-nav">
+    <section id="sec-nav">
 
         <div id="sec-items">
             <div class="sec-head">
@@ -1086,7 +1086,7 @@
                         <option value="cat1">cat 1</option>
                         <option value="cat2">cat 2</option>
                     </select>
-                    <div class="close-search flex-center" onclick="show('#sec-search')">
+                    <div class="close-search flex-center" onclick="closeSearch()">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
