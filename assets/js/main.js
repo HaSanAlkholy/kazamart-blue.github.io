@@ -227,7 +227,6 @@ function closeSearch() {
 };
 
 $('#sec-nav').click(function (e) { 
-  console.log(e.target);
   if (e.target.id == "sec-nav" || e.target.id == "sec-search" ) {
     $('#sec-search').removeClass('search-active');
     $('#sec-items').removeClass('show');
@@ -239,5 +238,4 @@ $('#sec-nav').click(function (e) {
 
 function show(e){
   $(e).toggleClass('active');
-  console.log('called');
 }

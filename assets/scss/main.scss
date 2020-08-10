@@ -789,8 +789,8 @@ main {
 
             h3 {
               font-size: 3rem;
-              
-              @media(max-width: 576px){
+
+              @media (max-width: 576px) {
                 font-size: 2.3rem;
               }
 
@@ -1201,7 +1201,9 @@ footer {
           .head {
             h4 {
               @media (max-width: 576px) {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-top: 1rem;
               }
             }
           }
@@ -1228,7 +1230,7 @@ footer {
             z-index: -1;
             opacity: 0;
             height: 0;
-            transition: all 0.1s;
+            transition: all 0.5s;
 
             li {
               margin-bottom: 0;
@@ -1241,16 +1243,14 @@ footer {
         }
       }
 
-      .dropdown2:hover {
+      .active {
         @media (max-width: 576px) {
-          .dropdown-content {
-            z-index: 15;
-            opacity: 1;
-            height: auto;
+          z-index: 15 !important;
+          opacity: 1 !important;
+          height: auto !important;
 
-            li {
-              margin-bottom: 0.5rem;
-            }
+          li {
+            margin-bottom: 0.5rem !important;
           }
         }
       }
